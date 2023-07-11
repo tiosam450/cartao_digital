@@ -1,0 +1,147 @@
+.container{
+    min-height: 100vh;
+    background: url(img/background.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto{
+    margin: 0 0 40px;
+    z-index: 5;    
+}
+
+.foto img{
+    display: block;
+    width: 150px;
+}
+
+.container_botoes{
+    background: url(img/box.png) center center no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: screen;
+    margin-top: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a.botoes{
+    margin: 5px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(103,23,205) 0%, rgb(40,113,250) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(103,23,205) 0%, rgb(40,113,250) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(103,23,205) 0%, rgb(40,113,250) 100%);
+    transition: .2s;
+}
+
+.botoes:hover{
+    transform: scale(1.03);
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 5px;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    margin: 0 0 0 5px;
+}
+
+.icone{
+    width: 70px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+}
+
+svg{
+    transform: scale(0.5);
+}
+
+
+@media (max-width: 1366px) {
+.container{
+    /* min-height: none; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container_botoes{
+    transform: scale(0.65);
+}
+
+a.botoes{
+    margin: 5px;
+}
+}
+
+
+@media (max-width: 600px) {
+.container{
+    overflow-y: scroll;
+    align-items: flex-start;
+}
+.container_botoes{
+    transform: scale(0.73);
+    margin-top: -100px;
+}
+
+a.botoes{
+    margin: 5px;
+}
+}
+
+
+@media (max-width: 500px) {
+    .container{
+        overflow-y: scroll;
+        align-items: flex-start;
+    }
+    .container_botoes{
+        transform: scale(0.8);
+        margin-top: -70px;
+    }
+    
+    a.botoes{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        overflow-y: scroll;
+        align-items: flex-start;
+    }
+    .container_botoes{
+        transform: scale(0.7);
+        margin-top: -100px;
+    }
+    
+    a.botoes{
+        margin: 5px;
+    }
+    }
